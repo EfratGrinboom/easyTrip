@@ -1,0 +1,306 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    max-width: 100%;
+    font-family: 'Varela Round', Helvetica, Arial, Lucida, sans-serif;
+}
+
+body {
+    background-image: url(../assests/img/aa.jpg);
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    height: 5%;
+    background-color: rgb(223 104 10);
+}
+
+header img {
+    width: 20%;
+    background-color: rgb(223 104 10);
+    margin-right: 45%;
+}
+
+nav {
+    position: sticky;
+    top: 5%;
+    display: flex;
+}
+
+.back-img {
+    background-image: url(../assests/img/aa.jpg);
+
+}
+
+nav h2 {
+    padding-left: 3vw;
+    padding-top: 2vw;
+    color: white;
+    background-color: rgb(223 104 10);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+
+}
+
+nav a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+nav img {
+    box-shadow: none;
+    background: none;
+    height: 24px;
+    margin-left: 3px;
+}
+
+header h1 {
+    background-color: rgb(223 104 10);
+    text-align: center;
+
+}
+
+.open {
+    background-color: rgb(223, 104, 10);
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+#shape {
+    height: 80px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    background-color: white;
+    z-index: 0;
+    border-top: 5px solid black;
+
+}
+
+.welcom {
+        text-align: center;
+    width: 50%;
+    margin: auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    font-size: 60px;
+
+    background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    padding: 40vh 10vw;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+
+article {
+    display: flex;
+    margin: 5% auto;
+    margin: 5% 10%;
+    align-items: center;
+}
+
+article img,
+a {
+    width: 18vw;
+    margin: 0px auto;
+
+}
+
+article div img,
+a {
+    width: 18vw;
+    margin: 0px auto;
+
+}
+
+article p {
+    margin: 0px 10%;
+    font-size: 1rem;
+    text-align: justify;
+    font-family: sans-serif;
+
+}
+
+nav h2:hover {
+    color: rgb(0, 0, 0);
+    font-style: border;
+}
+
+nav h2:visited {
+    color: rgb(0, 0, 0);
+}
+
+nav ul {
+    background-color: rgb(223, 104, 10);
+}
+
+nav a {
+    background-color: rgb(223, 104, 10);
+}
+
+footer {
+    border-top: 1px solid black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 8%;
+    background-color: rgb(105, 100, 100);
+
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    background-color: rgb(105, 100, 100);
+    margin: auto;
+}
+
+footer ul li {
+    padding-left: 1em;
+    background: none;
+    color: rgb(223, 104, 10);
+    font-weight: bold;
+    font-size: large;
+}
+
+footer ul li a {
+    background: none;
+    color: rgb(223, 104, 10);
+    text-decoration: none;
+}
+
+footer img {
+    background: none;
+    box-shadow: none;
+}
+
+iframe {
+    margin: auto;
+}
+
+section {
+    padding: 13vh 10vw;
+}
+
+section p {
+    font-size: 1.5em;
+    font-family:
+             Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+
+}
+
+img {
+    border-radius: 30%;
+    box-shadow: 15px 15px 10px lightgray;
+}
+
+.images {
+    display: grid;
+    grid-auto-rows: 18vw;
+    grid-gap: 25px;
+    width: 80vw;
+    margin: 3vh auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    box-sizing: border-box;
+
+}
+
+.images article {
+    display: flex;
+    flex-direction: column;
+}
+
+.images article p {
+    margin-top: 3vw;
+}
+
+#man1 {
+    width: 100%;
+
+}
+
+#mam1 {
+    width: 95%;
+}
+
+#woman1 {
+    width: 50vw;
+
+}
+
+#kid {
+    width: 90%;
+}
+
+.images p {
+    height: fit-content;
+    width: 90%;
+    text-align: justify;
+       border-bottom: rgb(223, 104, 10) solid 8px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 0.8rem;
+    font-style: italic;
+    padding: 2vh 1vw;
+}
+@media screen and (max-width:768px) and (min-width:480px){
+.images{
+    grid: unset;
+}
+nav h2{
+    display: none;
+}
+footer ul li a{
+font-size: small;
+font-weight: unset;
+}
+#kid,#mam1,#man1,#woman1{
+    width:30vw;
+}
+
+
+}
+@media screen and (max-width:480px) and (min-width:320px){
+    .images{
+        grid: unset;
+    }
+    nav h2{
+        display: none;
+    }
+    footer ul li a{
+    display: none;
+    }
+    
+    #troble{
+        display: none;
+        margin-left: 10px;
+    }
+    #kid,#mam1,#man1,#woman1{
+        width:30vw;
+    }
+    
+    
+    }
+   
+    @media screen and (max-width:1200px) and (min-width:1025px){
+p{
+    font-size: xx-large;
+}
+    }
